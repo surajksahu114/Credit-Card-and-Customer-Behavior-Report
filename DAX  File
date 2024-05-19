@@ -1,0 +1,29 @@
+Data Pre-processing:
+
+In Customer Dataset:
+•	Age column in customer dataset was modified to make age ranges like 20-30. 30-40, 40-50, 50-60 and 60-70 and 60+ in a new column as AgeRange.
+DAX: 
+AgeRange = SWITCH(
+    TRUE(),
+    customer[Customer_Age] <30,"20-30",
+    customer[Customer_Age]>=30 && customer[Customer_Age] <40, "30-40",
+    customer[Customer_Age]>=40 && customer[Customer_Age] <50, "40-50",
+    customer[Customer_Age]>=50 && customer[Customer_Age] <60, "50-60",
+    customer[Customer_Age] >=60,"60+",
+    "Unknown"
+)
+
+•	MonthlyIncome column was also altered to make salary ranges as 35k, 35k-70K and 70k+ in a new column namely SalaryRange.
+DAX:
+SalaryRange = SWITCH(
+    TRUE(),
+    customer[Income]<35000,"Low",
+    customer[Income]>=35000 && customer[Income]<70000,"Med",
+    customer[Income]>70000,"High",
+    "Unknown")
+
+
+In Transaction Dataset:
+•	Revenue Column was added by adding following column values: Annual fees, Total Transaction Amount, and Interest Earned.
+DAX: 
+Revenue = credit_card[Annual_Fees]+credit_card[Total_Trans_Amt]+credit_card[Interest_Earned]
