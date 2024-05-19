@@ -33,6 +33,7 @@ Credit card and customer behavior analysis involves examining transaction data t
 #### Transaction Report:
 ##### 1.	Focus on High-Performing Card Types
 _•	Enhance Benefits for Blue and Silver Card Users:_ Given that these card types contribute significantly to revenue ($48M from Blue and $6M from Silver), consider enhancing their benefits. This could include increased rewards, exclusive offers, and better interest rates to retain and attract more users.
+
 _•	Targeted Promotions:_ Launch targeted marketing campaigns highlighting the advantages of Blue and Silver cards to encourage more customers to upgrade or apply for these cards.
 ##### 2.	Engage Graduate Customers
 •	Tailored Offers for Graduates: Since graduate customers are active and contribute significantly to credit card revenue, design special offers, rewards programs, and loyalty benefits tailored to their preferences and needs.
